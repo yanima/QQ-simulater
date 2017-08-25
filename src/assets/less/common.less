@@ -1,0 +1,49 @@
+@body-bg:rgba(207, 225, 251, 0.78);
+@white:#fff;
+@title-color:gray;
+@color:rgb(56, 57, 57);
+body{
+  background: @body-bg;
+  color: @color;
+}
+.logo{
+  margin-top:-60px;
+  padding: 24px;
+}
+.row{
+  overflow: hidden;
+  margin-top:16px;
+  margin-bottom:16px;
+  color: rgba(0, 65, 123, 0.81);
+  .col-padding{
+    background: @white;
+    margin:0 24px;
+    padding:16px;
+    margin-bottom:-3000px;
+    padding-bottom:3000px;
+    border-radius: 10px;
+    box-shadow: 8px 16px 36px rgba(0, 0, 0, 0.1);
+  }
+}
+fieldset{
+  border:1px solid #f1f1f1;
+  border-radius: 8px;
+  margin:20px;
+  .hid-border{
+    border:0;
+    outline:none;
+    resize:none;
+    box-shadow: none;
+  }
+}
+.iconfont{
+  margin-right:14px;
+}
+.log{
+  width:100%;
+  height: 400px;
+  overflow-x: hidden;
+  word-wrap:break-word;
+  word-break:break-all;
+  overflow-y: auto;
+}
