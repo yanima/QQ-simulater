@@ -13,11 +13,10 @@ $("#genetareQRCode ").click(function() {
 
     $.ajax({
         method: "GET ",
-        url: 'http://192.168.54.31:8088/scanQRCode/getSnAndPidByPinterId?printerId=02F5932E339D45C0A45C88F39AB147BC',
+        url: 'http://192.168.54.31:8088/scanQRCode/getSnAndPidByPinterId?printerId=',
         async: false, // 使用同步方式
         // 1 需要使用JSON.stringify 否则格式为 a=2&b=3&now=14...
         // 2 需要强制类型转换，否则格式为 {"a ":"2 ","b ":"3 "}
-        //data: {"sku ": "F5S46B ","emailId ": "iaby762uch58@emailinbound-test3.itcs.hp.com "},
         // data: JSON.stringify({
         //     sku: sku,
         //     emailId: emailId
@@ -47,7 +46,6 @@ $("#scan ").click(function() {
         async: false, // 使用同步方式
         // 1 需要使用JSON.stringify 否则格式为 a=2&b=3&now=14...
         // 2 需要强制类型转换，否则格式为 {"a ":"2 ","b ":"3 "}
-        //data: {"sku ": "F5S46B ","emailId ": "iaby762uch58@emailinbound-test3.itcs.hp.com "},
         data: JSON.stringify({
             url: "https://cloud-print-qrcode-sgp.s3-ap-southeast-1.amazonaws.com/1700001671/cfd48b309abd44ae895a39bdf4fc4b51.png"
         }),
